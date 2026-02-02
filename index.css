@@ -1,0 +1,1200 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Gilda+Display&family=Great+Vibes&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=Monsieur+La+Doulaise&family=My+Soul&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+    position: absolute;
+    background-color: transparent;
+    z-index: 1000;
+    justify-content: space-between;
+}
+
+.navbar h1{
+    font-size: 20px;
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: italic;
+    margin: 15px;
+    color: white;
+}
+
+.nav-content{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    font-size: 17px;
+    font-family: 'Playfair Display', serif;
+    text-decoration-style: none;
+    cursor: pointer;
+}
+
+.nav-button{
+    padding-right: 10px;
+}
+
+.nav-button a button{
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.nav-button a button:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#connect{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    background-color: lightgrey;
+}
+
+#hire{
+    background-color: gold;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url(fold.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-container {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    z-index: 2;
+    position: relative;
+}
+
+.hero-header {
+    width: 100%;
+    font-size: 61px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    line-height: 1.2;
+    color: white;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.hero-text{
+    width: 100%;
+    font-size: 20px;
+    font-family: 'playfair Display', serif;
+    color: white;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.hero-buttons{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.hero-buttons a button{
+    height: 32px;
+    border: none;
+    border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.hero-buttons a button:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#get-started{
+    width: 70px;
+    background-color: gold;
+    margin-left: 550px;
+}
+
+#see-work{
+    width: 100px;
+    margin-left: 20px;
+    background-color: lightgrey;
+}
+
+/* Info Section */
+.info {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.info-container {
+    width: 90%;
+    height: 80%;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    display: flex;
+}
+
+.info-wrapper{
+    width: 50%;
+    text-align: left;
+}
+
+.info-container small {
+    font-size: 16px;
+    margin-left: 00px;
+    font-family: 'Playfair Display', serif;
+}
+
+.info-header{
+    text-align: left;
+    margin-top: 5px;
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.info-text{
+    font-size: 20px;
+    text-align: left;
+    margin-top: 20px;
+    font-family: "Georgia", serif;
+    line-height: 1.2;
+}
+
+.info-buttons{
+    margin-top: 30px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.info-buttons a button{
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.info-buttons a button:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);   
+}
+
+.cv{
+    width: 90px;
+    font-family: 'Playfair Display', serif;
+    margin-right: 10px;
+    background-color: lightgrey;
+}
+
+.cont{
+    width: 80px;
+    background-color: gold;
+}
+
+.info-image{
+    width: 600px;
+    border-radius: 20px;
+    margin-left: 130px;
+    background-image: url(infoed.png);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Service Section */
+.service{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.service-container{
+    width: 85%;
+    height: 80%;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    display: flex;
+    gap: 100px;
+}
+
+.service-wrapper{
+    width: 100%;
+    height: 400px;
+    margin-top: 60px;
+    text-align: left;
+    margin-left: -70px;
+}
+
+.service-container small{
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+}
+
+.service-header{
+    text-align: left;
+    margin-top: 2px;
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.service-text{
+    font-size: 17px;
+    text-align: left;
+    margin-top: 10px;
+    font-family: "Georgia", serif;
+    line-height: 1.2;
+}
+
+.service-buttons{
+    margin-top: 30px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.service-buttons a button{
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.service-buttons a button:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);     
+}
+
+.get{
+    width: 100px;
+    background-color: gold;
+    margin-right: 10px;
+}
+
+.learn-more{
+    width: 120px;
+    background-color: lightgrey;
+}
+
+.service-net {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card {
+  position: absolute;
+  width: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.service-card1{
+    width: 500px;
+    height: 80%;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.service-image-1{
+    width: 500px;
+    height: 70%;
+    border-radius: 20px;
+    background-image: url(Landing\ page\ design.jpeg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-image-1 small{
+    background: transparent;
+    color: white;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: -220px;
+    font-family: "Alex Brush", cursive;
+}
+
+.service-content{
+    width: 100%;
+    height: 30%;
+    text-align: left;
+}
+
+.service-content h3{
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-style: italic;
+    font-family: "Georgia", serif;
+}
+
+.service-content p{
+    font-size: 16px;
+    margin-top: 5px;
+    font-family: "Georgia", serif;
+    line-height: 1.2;
+}
+
+.service-card2{
+    width: 500px;
+    height: 80%;
+    margin-left: 19px;
+    margin-top: 50px;
+}
+
+.service-image-2{
+    width: 500px;
+    height: 70%;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-image-2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.service-card3{
+    width: 500px;
+    height: 80%;
+    margin-left: 19px;
+    margin-top: 50px;
+}
+
+.service-image-3{
+    width: 500px;
+    height: 80%;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-image-3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.service-card4{
+    width: 500px;
+    height: 80%;
+    margin-left: 19px;
+    margin-top: 50px;
+}
+
+.service-image-4{
+    width: 500px;
+    height: 70%;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-image-4 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-position: center;
+    object-fit: cover;
+}
+
+/* projects*/
+.projects{
+    width: 100%;
+    height: 250vh;
+}
+
+.liner{
+    text-align: center;
+    font-family: "Georgia", serif;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.projects-header{
+    text-align: center;
+    font-family: "Georgia", serif;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.section-container{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+
+.projects-container{
+    width: 100%;
+    height: 185vh;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-1{
+    width: 400px;
+    height: 80%;
+    gap: 50px;
+}
+
+.one{
+    height: 380px;
+    margin-bottom: 40px;
+}
+
+.two{
+    margin-bottom: 30px;
+}
+
+.four{
+    margin-bottom: 20px;
+}
+
+.four .tools .cc{
+    width: 50px;
+}
+
+.four .tools .jav{
+    margin-left: -20px;
+}
+
+.project-card{
+    width: 290px;
+    height: 350px;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.project-image{
+    width: 290px;
+    height: 150px;
+}
+
+.project-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.project-content{
+    width: 100%;
+    height: 200px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);   
+}
+
+/* Specific project card heights */
+.neo{
+    height: 210px;
+}
+
+.block{
+    height: 230px;
+}
+
+.toll{
+    height: 220px;
+}
+
+.title{
+    font-size: 18px;
+    font-family: "Georgia", serif;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: 200;
+}
+
+.text{
+    font-family: "Georgia", serif;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 25px;
+    line-height: 1.5;
+}
+
+.tools{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.tools p{
+    font-size: 13px;
+    font-family: "Georgia", serif;
+    font-style: italic;
+    gap: 20px;
+    border-radius: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff10, #ffffff05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow:
+    inset 2px 2px 5px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+    cursor: default;
+}
+
+.tools p:hover {
+    transform: translateY(-4px) scale(1.05);
+    background-color: black;
+    color: white;
+    filter: brightness(1.2);
+}
+
+.ui{
+    width: 70px;
+    margin-left: 10px;
+    background: linear-gradient(135deg, #ff8a00, #e52e71);
+}
+
+.ml{
+    width: 60px;
+    margin-left: 10px;
+    background: linear-gradient(135deg, #ffce00, #ff6a00);
+}
+
+.cs{
+    width: 50px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+.java{
+    width: 40px;
+    margin-left: 15px;
+    background: linear-gradient(135deg, #7fff00, #32cd32);
+}
+
+.fig{
+    width: 60px;
+    margin-left: 10px;
+    background: linear-gradient(135deg, #f24e1e, #a259ff);
+}
+
+.linked{
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 10px;
+    color: black;
+    font-family: "Georgia", serif;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.linked a{
+    text-decoration: none;
+    color: black;
+}
+
+.container-2{
+    width: 400px;
+}
+
+.container-2 .tools{
+    align-content: center;
+}
+
+.hl{
+    margin-left: 30px;
+}
+
+.cc{
+    margin-left: 10px;
+}
+
+.jav{
+    width: 50px;
+    text-align: center;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.intro{
+    width: 70%;
+    height: 300px;
+    margin-top: -390px;
+    margin-left: 200px;
+}
+
+.intro h3{
+    font-family: "Georgia", serif;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.intro p{
+    font-family: "Georgia", serif;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.5;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.intro-button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 30px;
+    background-color: gold;
+    font-family: "Georgia", serif;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* build Section */
+.build{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.build-container{
+    position: relative;
+    z-index: 10;
+    width: 80%;
+    height: 50%;
+    margin-left: -20px;
+    text-align: center;
+    line-height: 1.5;
+    border-radius: 20px; 
+    background-image: url(puzzel.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.build-container h1{
+    font-family: "Georgia", serif;
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: 60px;
+    line-height: 1;
+    color: white;
+}
+
+.build-container p{
+    font-family: "Georgia", serif;
+    font-size: 17px;
+    margin-top: 10px;
+    color: white;
+}
+
+.build-buttons{
+    width: 100%;
+    border: none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: "Georgia", serif;
+    font-size: 16px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.build-buttons a button{
+    width: 100px;
+    height: 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Georgia", serif;
+    font-size: 13px;
+}
+
+.start{
+    background-color: gold;
+}
+
+a .call{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+/* Workflow Section */
+.workflow{
+    width: 100%;
+    height: 100vh;
+}
+
+.workflow h1{
+    font-family: "Georgia", serif;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.workflow-container{
+    width: 80%;
+    height: 80%;
+    margin-top: 60px;
+    margin-left: 120px;
+    text-align: center;
+    display: flex;
+}
+
+.flow-image{
+    width: 400px;
+    height: 400px;
+    margin-left: 30px;
+    margin-top: 50px;
+    background-image: url(workflow.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.flow-container{
+    width: 400px;
+    height: 350px;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+.develop{
+    width: 100%;
+    height: 85px;
+    text-align: justify;
+    cursor: pointer;
+}
+
+.develop:hover{
+    background-color: lightgray;
+    border-left: 2px solid black;
+}
+
+.develop h2{
+    font-family: "Georgia", serif;
+    font-size: 25px;
+    font-weight: 300;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.develop p{
+    font-family: "Georgia", serif;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.consult{
+    width: 100%;
+    height: 85px;
+    text-align: justify;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.consult:hover{
+    background-color: lightgray;
+    border-left: 2px solid black;
+}
+
+.consult h2{
+    font-family: "Georgia", serif;
+    font-size: 25px;
+    font-weight: 300;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.consult p{
+    font-family: "Georgia", serif;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.design{
+    width: 100%;
+    height: 85px;
+    text-align: justify;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.design:hover{
+    background-color: lightgray;
+    border-left: 2px solid black;
+}
+
+.design h2{
+    font-family: "Georgia", serif;
+    font-size: 25px;
+    font-weight: 300;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.design p{
+    font-family: "Georgia", serif;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* FAQ Section */
+.faq{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+
+}
+
+.right{
+    width: 40%;
+    height: 40%;
+    text-align: justify;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.right h1{
+    font-family: "Georgia", serif;
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.right p{
+    font-family: "Georgia", serif;
+    font-size: 16px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+.faq-button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
+    background-color: gold;
+    font-family: "Georgia", serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.left{
+    width: 35%;
+    height: 64%;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 110px;
+}
+
+.left-content-1{
+    width: 100%;
+    height: 112px;
+    cursor: pointer;
+    text-align: justify;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+
+.left-content-1 h3{
+    padding-top: 15px;
+    font-family: "Georgia", serif;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.left-content-1 p{
+    font-family: "Georgia", serif;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-right: 15px;
+    line-height: 1.5;
+}
+
+.left-content-2{
+    width: 100%;
+    height: 120px;
+    cursor: pointer;
+    text-align: justify;
+    border-bottom: 1px solid gray;
+}
+
+.left-content-2 h3{
+    padding-top: 10px;
+    font-family: "Georgia", serif;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.left-content-2 p{
+    font-family: "Georgia", serif;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-right: 15px;
+    line-height: 1.5;
+}
+
+.left-content-3{
+    width: 100%;
+    height: 120px;
+    cursor: pointer;
+    text-align: justify;
+    border-bottom: 1px solid gray;
+}
+
+.left-content-3 h3{
+    padding-top: 10px;
+    font-family: "Georgia", serif;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.left-content-3 p{
+    font-family: "Georgia", serif;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-right: 15px;
+    line-height: 1.5;
+}
+
+.left-content-4{
+    width: 100%;
+    height: 120px;
+    cursor: pointer;
+    text-align: justify;
+    border-bottom: 1px solid gray;
+}
+
+.left-content-4 h3{
+    padding-top: 10px;
+    font-family: "Georgia", serif;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.left-content-4 p{
+    font-family: "Georgia", serif;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-right: 15px;
+    line-height: 1.5;
+}
+
+.left-content-5{
+    width: 100%;
+    height: 120px;
+    cursor: pointer;
+    text-align: justify;
+    border-bottom: 1px solid gray;
+}
+
+.left-content-5 h3{
+    padding-top: 10px;
+    font-family: "Georgia", serif;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.left-content-5 p{
+    font-family: "Georgia", serif;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-right: 15px;
+    line-height: 1.5;
+}
+
+/* Footer section*/
+.footer{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-color: lightgoldenrodyellow;
+}
+
+.footer-container{
+    width: 80%;
+    height: 43%;
+    margin-top: 90px; 
+    margin-left: 120px;
+}
+
+.footer-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-wrapper h4{
+    font-family: "Alex Brush", cursive;
+    font-size: 20px;
+    font-weight: 500;   
+}
+
+.footer-links a{
+    text-decoration: none;
+    margin: 5px;
+    color: black;
+    cursor: pointer;
+    font-family: "Georgia", serif;
+    font-size: 17px;
+}
+
+.footer-icons{
+    display: flex;
+    margin-right: 20px;
+    gap: 10px;
+}
+
+.icon1{
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.icon2{
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.icon3{
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.footer-container hr{
+    margin-top: 90px;
+    border: 0.5px solid gray;
+}
+
+.footer-end{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.footer-end p{
+    font-family: "Georgia", serif;
+    font-size: 16px;
+    margin-left: 10px;
+} 
+
+.firt{
+    padding-left: 200px;
+}
+
+.play{
+    display: flex;
+    gap: 10px;
+}
+
+.play p{
+    font-family: "Georgia", serif;
+    font-size: 16px;
+    text-decoration: underline;
+}
